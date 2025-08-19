@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-permalink: /blog/projects/
+permalink: /projects/
 ---
 
 # 📂 Projects
