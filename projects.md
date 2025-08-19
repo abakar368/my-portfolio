@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Projects
+permalink: /blog/projects/
 ---
 
 # 📂 Projects
-- **CAD Design Portfolio** – Screenshots + GitHub repos
-- **Computer Vision Models** – Object detection, segmentation
-- **RL Experiments** – Training agents in custom environments
+- CAD Design Portfolio
+- Computer Vision Models
+- Reinforcement Learning Experiments
