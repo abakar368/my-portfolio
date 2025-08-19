@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: 'Press Start 2P', monospace;
+  color: #00ffcc;
+  overflow: hidden;
+}
+
+canvas#starfield {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.links a {
+  color: #ffcc00;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #ffcc00;
+}
+
+.links a:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+#sprite {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+}
