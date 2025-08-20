@@ -1,26 +1,31 @@
+<!-- /index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>Retro Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
 </head>
 <body>
   <canvas id="starfield"></canvas>
+
   <div class="container">
-    <h1>🚀 My Portfolio</h1>
+    <h1>🚀 My Retro Portfolio</h1>
     <p>Move with arrow keys</p>
 
     <div class="links">
-        <a href="blog/about.html">🧑 About</a>
-        <a href="#" id="projects-link">📂 Projects</a>
-        <a href="blog/index.html">✍️ Blog</a>
+      <a href="blog/about.html">🧑 About</a>
+      <!-- why: use data-href so you can switch to /projects/ later without touching JS -->
+      <a href="#" id="projects-link" data-href="blog/projects.html">📂 Projects</a>
+      <a href="blog/index.html">✍️ Blog</a>
     </div>
+  </div>
 
-
+  <!-- optional sprite -->
   <img src="https://i.ibb.co/fx6rBRH/character-sprite.png" id="sprite" alt="sprite"/>
+
   <script src="script.js"></script>
 </body>
 </html>
