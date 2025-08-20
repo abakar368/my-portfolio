@@ -1,2 +1,4 @@
-title: "My Blog"
 theme: minima
+title: "My Portfolio"
+baseurl: "/my-portfolio"   # repo name
+url: "https://abakar368.github.io"
