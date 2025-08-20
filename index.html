@@ -1,5 +1,33 @@
-<div class="links">
-  <a href="{{ site.baseurl }}/about/">🧑 About</a>
-  <a href="#" id="projects-link" data-href="{{ site.baseurl }}/projects/">📂 Projects</a>
-  <a href="{{ site.baseurl }}/blog/">✍️ Blog</a>
-</div>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Starfield background -->
+  <canvas id="starfield"></canvas>
+
+  <div class="container">
+    <h1>🚀 My Retro Portfolio</h1>
+    <p>Move with arrow keys</p>
+
+    <div class="links">
+      <!-- All links use data-href for JS animation -->
+      <a href="#" data-href="{{ site.baseurl }}/about/">🧑 About</a>
+      <a href="#" id="projects-link" data-href="{{ site.baseurl }}/projects/">📂 Projects</a>
+      <a href="#" data-href="{{ site.baseurl }}/blog/">✍️ Blog</a>
+    </div>
+  </div>
+
+  <!-- Retro sprite character -->
+  <img src="https://i.ibb.co/fx6rBRH/character-sprite.png" id="sprite" alt="sprite"/>
+
+  <!-- Link to script -->
+  <script src="script.js" defer></script>
+</body>
+</html>

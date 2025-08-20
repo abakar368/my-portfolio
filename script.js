@@ -1,22 +1,22 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  const projectsLink = document.getElementById("projects-link");
+  const animatedLinks = document.querySelectorAll("[data-href]");
 
-  if (projectsLink) {
+  animatedLinks.forEach((link) => {
     let isAnimating = false;
 
-    projectsLink.addEventListener("click", (e) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
 
       if (isAnimating) return; // prevent double-clicks
       isAnimating = true;
 
-      const target = projectsLink.dataset.href;
+      const target = link.dataset.href;
 
       // Save the original text
-      const text = projectsLink.textContent.trim();
-      projectsLink.textContent = "";
+      const text = link.textContent.trim();
+      link.textContent = "";
 
       // Split text into spans for animation
       [...text].forEach((char, i) => {
@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
         span.textContent = char;
         span.classList.add("tetris-piece");
         span.style.animationDelay = `${i * 0.1}s`;
-        projectsLink.appendChild(span);
+        link.appendChild(span);
       });
 
       // Redirect after animation ends
       setTimeout(() => {
         window.location.href = target;
-      }, 2000); // a bit longer than animation duration
+      }, 2000); // match with CSS animation timing
     });
-  }
+  });
 });
