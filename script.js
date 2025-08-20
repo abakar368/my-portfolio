@@ -38,3 +38,4 @@ document.addEventListener("keydown", e => {
   if (e.key === "ArrowRight") posX += speed;
   sprite.style.left = posX + "px";
 });
+

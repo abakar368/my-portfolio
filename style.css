@@ -44,3 +44,17 @@ canvas#starfield {
   transform: translateX(-50%);
   width: 64px;
 }
+
+
+/* Tetris animation */
+.tetris-piece {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  animation: fall 1.5s forwards;
+}
+
+@keyframes fall {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(200px) rotate(90deg); opacity: 0; }
+}
